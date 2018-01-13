@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CongratsController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="700.0">
+         <children>
+            <Button fx:id="exit" layoutX="318.0" layoutY="405.0" mnemonicParsing="false" onAction="#handle" prefHeight="58.0" prefWidth="90.0" text="Exit">
+               <font>
+                  <Font name="BebasNeue" size="28.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="51.0" layoutY="73.0" prefHeight="135.0" prefWidth="599.0" text="Congrats, You Won!">
+         <font>
+            <Font name="BebasNeue" size="93.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChoosePic">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" />
+      <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="800.0" prefWidth="1000.0">
+         <top>
+            <GridPane prefHeight="41.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#goHandle" prefHeight="88.0" prefWidth="84.0" text="Go" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <MenuButton mnemonicParsing="false" prefHeight="88.0" prefWidth="128.0" text="File" GridPane.columnIndex="1">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#openFunction" text="Open" />
+                      <MenuItem mnemonicParsing="false" onAction="#closeFunction" text="Close" />
+                    </items>
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </MenuButton>
+               </children>
+            </GridPane>
+         </top>
+         <center>
+            <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="imgView" fitHeight="690.0" fitWidth="970.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

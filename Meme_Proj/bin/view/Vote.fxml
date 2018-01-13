@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VotePage">
+   <children>
+      <SplitPane layoutX="60.0" layoutY="111.0" prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="189.0" AnchorPane.leftAnchor="677.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="111.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <items>
+            <ImageView fx:id="imgView2" fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <Separator layoutX="617.0" orientation="VERTICAL" prefHeight="720.0" prefWidth="0.0" />
+      <SplitPane layoutX="60.0" layoutY="111.0" prefHeight="500.0" prefWidth="500.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <items>
+            <ImageView fx:id="imgView1" fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </SplitPane>
+      <Separator layoutX="-6.0" layoutY="692.0" prefHeight="10.0" prefWidth="1200.0" />
+      <TextArea fx:id="ta1" layoutX="248.0" layoutY="630.0" prefHeight="44.0" prefWidth="124.0" />
+      <TextArea fx:id="ta2" layoutX="850.0" layoutY="630.0" prefHeight="44.0" prefWidth="124.0" />
+      <Button layoutX="558.0" layoutY="724.0" mnemonicParsing="false" onAction="#sendFunction" prefHeight="39.0" prefWidth="124.0" text="Send">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="vote1" layoutX="372.0" layoutY="630.0" mnemonicParsing="false" onAction="#updateVotes1" prefHeight="44.0" prefWidth="44.0" text="+1">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="vote2" layoutX="974.0" layoutY="630.0" mnemonicParsing="false" onAction="#updateVotes2" prefHeight="44.0" prefWidth="44.0" text="+1">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button layoutX="14.0" layoutY="39.0" mnemonicParsing="false" onAction="#setPics" text="setPics">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="vote1" layoutX="416.0" layoutY="630.0" mnemonicParsing="false" onAction="#updateVotesDown1" prefHeight="44.0" prefWidth="44.0" text="-1">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="vote2" layoutX="1018.0" layoutY="630.0" mnemonicParsing="false" onAction="#updateVotesDown2" prefHeight="44.0" prefWidth="44.0" text="-1">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+
+   </children>
+</AnchorPane>
